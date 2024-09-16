@@ -1,7 +1,9 @@
+import MainPage from "@/components/MainPage/MainPage";
+
 export default function Home() {
   return (
-    <div className="flex w-full m-auto">
-      <button class="btn">Button</button>;
-    </div>
+    <main className="flex flex-col justify-center items-center w-auto h-full bg-white border-red-500">
+      <MainPage />
+    </main>
   );
 }
