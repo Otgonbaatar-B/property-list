@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   const data = {
-    Sukhbaatar: [
+    SukhBaatar: [
       {
         company_name: "Suzuki Mongolia LLC",
         rating: 4.5,
@@ -85,7 +85,7 @@ export default function handler(req, res) {
         image_link: "https://example.com/images/chingeltei_store.jpg",
       },
     ],
-    "Khan-Uul": [
+    KhanUul: [
       {
         company_name: "Mongolian Barbecue",
         rating: 4.4,
@@ -129,7 +129,7 @@ export default function handler(req, res) {
           "https://uploads.naturkartan-cdn.se/e7a3de2cf16c785eeecc779e4203529d.jpg?width=960&height=640",
       },
     ],
-    Bayanzurkh: [
+    BayanZurkh: [
       {
         company_name: "The Pizza Company",
         rating: 4.0,
@@ -171,7 +171,7 @@ export default function handler(req, res) {
         image_link: "https://example.com/images/haveli_indian_restaurant.jpg",
       },
     ],
-    Bayangol: [
+    BayanGol: [
       {
         company_name: "Gobi Restaurant",
         rating: 4.2,
