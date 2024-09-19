@@ -1,12 +1,10 @@
 import Select from "react-select";
 import { Logo } from "../Icons/Logo";
-import { Map } from "../Map/Map";
 
 const Header = ({districtOptions, handleSelectChange}) => {
-  console.log(districtOptions);
   
   return (
-    <div className="flex items-center w-full h-[106px] p-5">
+    <div className="flex items-center w-full h-[106px] border-t border-r border-l rounded-t-3xl p-5">
       <div className="flex items-center gap-6">
         <Logo />
           <Select
