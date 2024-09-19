@@ -3,6 +3,7 @@ import { Logo } from "../Icons/Logo";
 import { Map } from "../Map/Map";
 
 const Header = ({districtOptions, handleSelectChange}) => {
+  console.log(districtOptions);
   
   return (
     <div className="flex items-center w-full h-[106px] p-5">

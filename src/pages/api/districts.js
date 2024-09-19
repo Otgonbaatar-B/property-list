@@ -2,12 +2,31 @@ export default function handler(req, res ) {
   const data = {
     "properties": [
       {
+        "id": 111,
+        "title": "Cozy Studio in Downtown LA",
+        "rentType": "rent",
+        "type": "Studio",
+        "lat": "34.044768519546984",
+        "long": "-118.26741952999743",
+        "star": "4.2",
+        "price": 1800,
+        "City": "Los Angeles",
+        "address": "123 Main St, Los Angeles, CA 90012",
+        "bedrooms": 0,
+        "bathrooms": 1,
+        "sqft": 450,
+        "amenities": ["Air Conditioning", "Dishwasher", "Elevator"],
+        "petFriendly": false,
+        "available": "2024-10-15",
+        "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+      },
+      {
         "id": 1,
         "title": "Cozy Studio in Downtown LA",
         "rentType": "rent",
         "type": "Studio",
-        "lat": "47.8854692918796",
-        "long": "106.91515896441278",
+        "lat": "34.05482710496097",
+        "long": "-118.24345591133904",
         "star": "4.2",
         "price": 1800,
         "City": "Los Angeles",

@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import ListCard from "./ListCard";
 
 const List = ({imageUrl}) => {
-  console.log(imageUrl);
-  
   const [imgChange, setImgChange] = useState(imageUrl); // Initialize imgChange with imgUrl
 
   useEffect(() => {
