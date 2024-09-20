@@ -1,25 +1,12 @@
 import { Filter } from "../Icons/FilterIcon";
 import ListCard from "./ListCard";
 
-const List = ({
-  // cityName,
-  // imageUrl,
-  // title,
-  // star,
-  // type,
-  // bedrooms,
-  // bathrooms,
-  // amenities,
-  selectedLocation,
-}) => {
+const List = ({ selectedLocation }) => {
   const uniqueCities = Array.from(
     new Set(selectedLocation.map((location) => location.City))
   );
-  // Format city names for display
   const cityNames =
-    uniqueCities.length === 1
-      ? uniqueCities[0] // Only one city selected
-      : uniqueCities.join(", "); // Multiple cities selected, join with commas
+    uniqueCities.length === 1 ? uniqueCities[0] : uniqueCities.join(", ");
 
   return (
     <div className="flex flex-col w-full h-[900px] pr-8 gap-5">

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Body from "../Body/Body";
 import Header from "../Header/Header";
-
+import { data } from "@/pages/api/districts";
 const MainPage = () => {
   const [districtOptions, setDistrictOptions] = useState([]);
   const [filterCity, setFilterCity] = useState([]);
@@ -10,9 +10,6 @@ const MainPage = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/districts");
-      const data = await response.json();
-
       const uniqueCityOptions = [];
       const citySet = new Set();
       data.properties.forEach((property) => {
@@ -49,7 +46,6 @@ const MainPage = () => {
         bathrooms: property.bathrooms,
         amenities: property.amenities[0],
       }));
-
     setFilterCity(newSelectedLocations);
   };
 
@@ -58,7 +54,7 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div className="container flex flex-col justify-center items-center max-w-[1366px] max-h-[1024px] mt-24 rounded-3xl">
+    <div className="container flex flex-col justify-center items-center max-w-[1366px] max-h-[1024px] mt-7 rounded-3xl">
       <Header
         districtOptions={districtOptions}
         handleSelectChange={handleSelectCityChange}
