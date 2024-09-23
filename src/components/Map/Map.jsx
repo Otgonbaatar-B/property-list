@@ -10,7 +10,7 @@ export function Map({ selectedLocation }) {
   useEffect(() => {
     const initMap = async () => {
       const loader = new Loader({
-        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY,
+        apiKey: "AIzaSyBeK6kNAnqtWp2xZpPHmcXOjESpg5cu6ek",
         version: "weekly",
       });
       const { Map, InfoWindow } = await loader.importLibrary("maps");
